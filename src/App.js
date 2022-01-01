@@ -14,7 +14,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   const logOutCallback = async () => {
-    await fetch('http://192.168.0.103:4000/logout', {
+    await fetch('http://localhost:4000/logout', {
       method: 'POST',
       credentials: 'include'
     });
@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
       async function checkRefershToken() {
-        const result = await (await fetch('http://192.168.0.103:4000/refresh_token', {
+        const result = await (await fetch('http://localhost:4000/refresh_token', {
           method: 'POST',
           credentials: 'include',
           headers: {

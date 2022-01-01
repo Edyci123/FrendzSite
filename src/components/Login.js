@@ -9,7 +9,7 @@ const Login = () => {
 
     const handleSubmit = async e => {
         e.preventDefault();
-        const result = await (await fetch('http://192.168.0.103:4000/login', {
+        const result = await (await fetch('http://localhost:4000/login', {
             method: 'POST',
             credentials: 'include',
             headers: {

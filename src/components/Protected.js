@@ -8,7 +8,7 @@ const Protected = ( {logOutCallback} ) => {
 
     useEffect(() => {
         async function fetchProtected() {
-            const result = await (await fetch('http://192.168.0.103:4000/getContacts', {
+            const result = await (await fetch('http://localhost:4000/getContacts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
