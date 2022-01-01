@@ -65,7 +65,7 @@ const Register = () => {
                         placeholder="Password"
                         autoComplete="current-password"
                     />
-                    <button className="button-5" role="button" type="sumbit">Register</button>
+                    <button className="button-5" type="sumbit">Register</button>
                 </div>
             </form>
         </div>

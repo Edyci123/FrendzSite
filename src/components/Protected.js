@@ -30,7 +30,7 @@ const Protected = ( {logOutCallback} ) => {
     return (
         <div>
             <div>{content}</div>
-            <button className="button-5" role="button" onClick={logOutCallback}>Log out</button> 
+            <button className="button-5" onClick={logOutCallback}>Log out</button> 
         </div>
 
     );

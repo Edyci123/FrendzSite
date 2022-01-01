@@ -63,7 +63,7 @@ const Login = () => {
                         placeholder="Password"
                         autoComplete="current-password"
                     />
-                    <button className="button-5" role="button" type="sumbit">Login</button>
+                    <button className="button-5" type="sumbit">Login</button>
                 </div>
             </form>
         </div>

@@ -9,7 +9,7 @@ const Content = ({ logOutCallback }) => {
     return (
         <div>
             <div>Content</div>
-            <button class="button-5" role="button" onClick={logOutCallback}>Log out</button>
+            <button className="button-5" role="button" onClick={logOutCallback}>Log out</button>
         </div>
     )
 }
