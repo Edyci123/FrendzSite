@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Content from './components/Content';
 import Protected from './components/Protected';
+import AddContact from "./components/AddContact";
 
 export const UserContext = React.createContext([]);
 
@@ -53,6 +54,7 @@ function App() {
           <Register path="register" />
           <Protected logOutCallback={logOutCallback} path="contacts" />
           <Content logOutCallback={logOutCallback} path="/" />
+          <AddContact logOutCallback={logOutCallback} path="/addcontacts" />
         </Router>
         <Navigation />
       </div>

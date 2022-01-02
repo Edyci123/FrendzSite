@@ -18,7 +18,7 @@ const Register = () => {
             })
         })).json();
 
-        if (!result.error) {
+        if (result.message) {
             console.log(result.message);
             navigate('/');
         } else {

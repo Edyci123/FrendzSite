@@ -6,6 +6,7 @@ const Navigation = ({ logOutCallback }) => (
         <li><Link to="/">Home</Link></li>
         <li><Link to="/contacts">Your contacts</Link></li>
         <li><Link to="/register">Register</Link></li>
+        <li><Link to="/addcontacts">Add a new Contact</Link></li>
     </ul>
 )
 
