@@ -18,18 +18,18 @@ const AddContact = () => {
     const handleSubmit = async e => {
         e.preventDefault();
 
-        const result = await (await fetch('http://localhost:4000/addContacts', {
+        const result = await fetch('http://localhost:4000/addContacts', {
             method: "POST",
             credentials: 'include',
             headers: {
                 'Content-type': "application/json",
                 'authorization': `Bearer ${user.accesstoken}`
             },
-            body: {
+            body: JSON.stringify({
                 username,
                 description
-            }
-        })).json();
+            })
+        });
 
         console.log(result);
     }
